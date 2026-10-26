@@ -218,3 +218,27 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# ---- propmatch-engine ----
+
+# Secrets: chi duoc commit ban .env.example
+!.env.example
+secrets/
+*.pem
+
+# Data: raw / derived artifacts khong version control
+data/raw/*
+data/silver/*
+data/gold/*
+data/reports/*
+data/geo/*
+!data/**/.gitkeep
+
+# MinIO local volume
+infra/minio/data/
+
+# dbt
+dbt/target/
+dbt/logs/
+dbt/dbt_packages/
+logs/
